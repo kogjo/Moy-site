@@ -1,0 +1,41 @@
+.container {
+    margin: auto;
+}
+
+.header {
+    margin: 0;
+    background-color: #a9a9a9;
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10%;
+}
+
+.logo {
+    padding: 25px 15px;
+}
+
+.menu ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0px 40px;
+}
+
+.menu li {
+    display: block;
+    padding: 50px 30px;
+    border: 1px #111111 solid;
+}
+
+.menu li:hover {
+    background-color: #7b7b7b86;
+    border-bottom: 4px #ff5d5d solid;
+}
+
+.footer p {
+    display: flex;
+    justify-content: flex-end;
+    margin: 30px;
+}
