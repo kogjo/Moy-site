@@ -63,8 +63,33 @@ button {
     padding: 10px;
 }
 
+.card_top {
+    position: relative;
+}
 
+.img_card {
+    z-index: 1;
+}
 
+.card_top .plus {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    left: 100px;
+    top: 90px;
+}
+
+.card_top:hover .plus {
+    display: block;
+}
+
+.date {
+    color: white;
+    position: absolute;
+    z-index: 2;
+    bottom: 10px;
+    left: 5px;
+}
 
 
 .footer p {
