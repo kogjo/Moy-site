@@ -1,103 +1,390 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="null.css">
-        <link rel="stylesheet" href="style.css">
-        <title>Document</title>
-    </head>
-    <body>
-        <div class="header">
-            <div class="container">
-                <div class="content">
-                    <div class="logo">
-                        <img src="img/PhotoCage app.png" alt="logo">
-                    </div>
-                    <div class="menu">
-                        <ul>
-                            <li>Home</li>
-                            <li>Gallery</li>
-                            <li>Members</li>
-                            <li>Logout</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/null.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="header">
         <div class="container">
             <div class="content">
-                <div>
-                    <div class="submit">
-                        <div>
-                            <p>Please select an image from your computer</p>
-                            <input type="file"/>
-                            <button>Upload image</button>
-                        </div>
-                    </div>
-                    <div class="cards">
-                        <div class="card" id="1">
-                            <div class="card_top">
-                                <img class="img_card" src="img/1_card.png" alt="image">
-                                <img class="plus" src="img/icon/plus.png" alt="">
-                                <p class="date">10/08/2010</p>
-                            </div>
-                            <div>
-                                <div>
-                                    <p>Lorem Ipsum is simply</p>
-                                    <img src="img/icon/star.png" alt="star">
-                                </div>
-                                <div>
-                                    <p>Share</p>
-                                    <ul>
-                                        <li><img src="img/icon/twitter.png" alt="twitter"></li>
-                                        <li><img src="img/icon/facebook.png" alt="facebook"></li>
-                                        <li><img src="img/icon/pinterest.png" alt="pinterest"></li>
-                                        <li><img src="img/icon/telegram.png" alt="telegram"></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div сlass="card" id="2">
-                            <div>
-                                <img src="img/1_card.png" alt="image">
-                                <img src="img/icon/plus.png" alt="">
-                                <p>10/08/2010</p>
-                            </div>
-                            <div>
-                                <div>
-                                    <p>Lorem Ipsum is simply</p>
-                                    <img src="img/icon/star.png" alt="star">
-                                </div>
-                                <div>
-                                    <p>Share</p>
-                                    <ul>
-                                        <li><img src="img/icon/twitter.png" alt="twitter"></li>
-                                        <li><img src="img/icon/facebook.png" alt="facebook"></li>
-                                        <li><img src="img/icon/pinterest.png" alt="pinterest"></li>
-                                        <li><img src="img/icon/telegram.png" alt="telegram"></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                
+                <div class="logo">
+                    <img src="img/PhotoCage app.png" alt="logo">
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li>Home</li>
+                        <li>Gallery</li>
+                        <li>Members</li>
+                        <li>Logout</li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <div class="footer">
-            <div class="container">
-                <p>© 2013 Photocage app powered by cssauthor.com</p>
+    </div>
+    <div class="container">
+        <div class="content">
+            <div>
+                <div class="submit">
+                    <div>
+                        <p>Please select an image from your computer</p>
+                        <input type="file" />
+                        <button>Upload image</button>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card" id="1">
+                        <div class="card_top">
+                            <img class="img_card" src="img/1_card.png" alt="image">
+                            <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                            <p class="date">10/08/2010</p>
+                        </div>
+                        <div class="card_button">
+                            <div class="favorites">
+                                <ul>
+                                    <li>
+                                        <p>Lorem Ipsum is simply</p>
+                                    </li>
+                                    <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                </ul>
+                            </div>
+                            <div class="share">
+                                <ul>
+                                    <li class="share_text">
+                                        <p>Share</p>
+                                    </li>
+                                    <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-facebook-official" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-pinterest" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-telegram" aria-hidden="true"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" id="2">
+                        <div class="card_top">
+                            <img class="img_card" src="img/2_card.png" alt="image">
+                            <img class="plus" src="img/icon/plus.png" alt="">
+                            <p class="date">10/08/2010</p>
+                        </div>
+                        <div class="card_button">
+                            <div class="favorites">
+                                <ul>
+                                    <li>
+                                        <p>Lorem Ipsum is simply</p>
+                                    </li>
+                                    <li><img src="img/icon/star.png" alt="star"></li>
+                                </ul>
+                            </div>
+                            <div class="share">
+                                <ul>
+                                    <li class="share_text">
+                                        <p>Share</p>
+                                    </li>
+                                    <li><img src="img/icon/twitter.png" alt="twitter"></li>
+                                    <li><img src="img/icon/facebook.png" alt="facebook"></li>
+                                    <li><img src="img/icon/pinterest.png" alt="pinterest"></li>
+                                    <li><img src="img/icon/telegram.png" alt="telegram"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" id="3">
+                        <div class="card_top">
+                            <img class="img_card" src="img/3_card.png" alt="image">
+                            <img class="plus" src="img/icon/plus.png" alt="">
+                            <p class="date">10/08/2010</p>
+                        </div>
+                        <div class="card_button">
+                            <div class="favorites">
+                                <ul>
+                                    <li>
+                                        <p>Lorem Ipsum is simply</p>
+                                    </li>
+                                    <li><img src="img/icon/star.png" alt="star"></li>
+                                </ul>
+                            </div>
+                            <div class="share">
+                                <ul>
+                                    <li class="share_text">
+                                        <p>Share</p>
+                                    </li>
+                                    <li><img src="img/icon/twitter.png" alt="twitter"></li>
+                                    <li><img src="img/icon/facebook.png" alt="facebook"></li>
+                                    <li><img src="img/icon/pinterest.png" alt="pinterest"></li>
+                                    <li><img src="img/icon/telegram.png" alt="telegram"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" id="4">
+                        <div class="card_top">
+                            <img class="img_card" src="img/4_card.png" alt="image">
+                            <img class="plus" src="img/icon/plus.png" alt="">
+                            <p class="date">10/08/2010</p>
+                        </div>
+                        <div class="card_button">
+                            <div class="favorites">
+                                <ul>
+                                    <li>
+                                        <p>Lorem Ipsum is simply</p>
+                                    </li>
+                                    <li><img src="img/icon/star.png" alt="star"></li>
+                                </ul>
+                            </div>
+                            <div class="share">
+                                <ul>
+                                    <li class="share_text">
+                                        <p>Share</p>
+                                    </li>
+                                    <li><img src="img/icon/twitter.png" alt="twitter"></li>
+                                    <li><img src="img/icon/facebook.png" alt="facebook"></li>
+                                    <li><img src="img/icon/pinterest.png" alt="pinterest"></li>
+                                    <li><img src="img/icon/telegram.png" alt="telegram"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" id="5">
+                        <div class="card_top">
+                            <img class="img_card" src="img/5_card.png" alt="image">
+                            <img class="plus" src="img/icon/plus.png" alt="">
+                            <p class="date">10/08/2010</p>
+                        </div>
+                        <div class="card_button">
+                            <div class="favorites">
+                                <ul>
+                                    <li>
+                                        <p>Lorem Ipsum is simply</p>
+                                    </li>
+                                    <li><img src="img/icon/star.png" alt="star"></li>
+                                </ul>
+                            </div>
+                            <div class="share">
+                                <ul>
+                                    <li class="share_text">
+                                        <p>Share</p>
+                                    </li>
+                                    <li><img src="img/icon/twitter.png" alt="twitter"></li>
+                                    <li><img src="img/icon/facebook.png" alt="facebook"></li>
+                                    <li><img src="img/icon/pinterest.png" alt="pinterest"></li>
+                                    <li><img src="img/icon/telegram.png" alt="telegram"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" id="6">
+                        <div class="card_top">
+                            <img class="img_card" src="img/6_card.png" alt="image">
+                            <img class="plus" src="img/icon/plus.png" alt="">
+                            <p class="date">10/08/2010</p>
+                        </div>
+                        <div class="card_button">
+                            <div class="favorites">
+                                <ul>
+                                    <li>
+                                        <p>Lorem Ipsum is simply</p>
+                                    </li>
+                                    <li><img src="img/icon/star.png" alt="star"></li>
+                                </ul>
+                            </div>
+                            <div class="share">
+                                <ul>
+                                    <li class="share_text">
+                                        <p>Share</p>
+                                    </li>
+                                    <li><img src="img/icon/twitter.png" alt="twitter"></li>
+                                    <li><img src="img/icon/facebook.png" alt="facebook"></li>
+                                    <li><img src="img/icon/pinterest.png" alt="pinterest"></li>
+                                    <li><img src="img/icon/telegram.png" alt="telegram"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" id="7">
+                        <div class="card_top">
+                            <img class="img_card" src="img/7_card.png" alt="image">
+                            <img class="plus" src="img/icon/plus.png" alt="">
+                            <p class="date">10/08/2010</p>
+                        </div>
+                        <div class="card_button">
+                            <div class="favorites">
+                                <ul>
+                                    <li>
+                                        <p>Lorem Ipsum is simply</p>
+                                    </li>
+                                    <li><img src="img/icon/star.png" alt="star"></li>
+                                </ul>
+                            </div>
+                            <div class="share">
+                                <ul>
+                                    <li class="share_text">
+                                        <p>Share</p>
+                                    </li>
+                                    <li><img src="img/icon/twitter.png" alt="twitter"></li>
+                                    <li><img src="img/icon/facebook.png" alt="facebook"></li>
+                                    <li><img src="img/icon/pinterest.png" alt="pinterest"></li>
+                                    <li><img src="img/icon/telegram.png" alt="telegram"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" id="8">
+                        <div class="card_top">
+                            <img class="img_card" src="img/8_card.png" alt="image">
+                            <img class="plus" src="img/icon/plus.png" alt="">
+                            <p class="date">10/08/2010</p>
+                        </div>
+                        <div class="card_button">
+                            <div class="favorites">
+                                <ul>
+                                    <li>
+                                        <p>Lorem Ipsum is simply</p>
+                                    </li>
+                                    <li><img src="img/icon/star.png" alt="star"></li>
+                                </ul>
+                            </div>
+                            <div class="share">
+                                <ul>
+                                    <li class="share_text">
+                                        <p>Share</p>
+                                    </li>
+                                    <li><img src="img/icon/twitter.png" alt="twitter"></li>
+                                    <li><img src="img/icon/facebook.png" alt="facebook"></li>
+                                    <li><img src="img/icon/pinterest.png" alt="pinterest"></li>
+                                    <li><img src="img/icon/telegram.png" alt="telegram"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" id="9">
+                        <div class="card_top">
+                            <img class="img_card" src="img/9_card.png" alt="image">
+                            <img class="plus" src="img/icon/plus.png" alt="">
+                            <p class="date">10/08/2010</p>
+                        </div>
+                        <div class="card_button">
+                            <div class="favorites">
+                                <ul>
+                                    <li>
+                                        <p>Lorem Ipsum is simply</p>
+                                    </li>
+                                    <li><img src="img/icon/star.png" alt="star"></li>
+                                </ul>
+                            </div>
+                            <div class="share">
+                                <ul>
+                                    <li class="share_text">
+                                        <p>Share</p>
+                                    </li>
+                                    <li><img src="img/icon/twitter.png" alt="twitter"></li>
+                                    <li><img src="img/icon/facebook.png" alt="facebook"></li>
+                                    <li><img src="img/icon/pinterest.png" alt="pinterest"></li>
+                                    <li><img src="img/icon/telegram.png" alt="telegram"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" id="10">
+                        <div class="card_top">
+                            <img class="img_card" src="img/10_card.png" alt="image">
+                            <img class="plus" src="img/icon/plus.png" alt="">
+                            <p class="date">10/08/2010</p>
+                        </div>
+                        <div class="card_button">
+                            <div class="favorites">
+                                <ul>
+                                    <li>
+                                        <p>Lorem Ipsum is simply</p>
+                                    </li>
+                                    <li><img src="img/icon/star.png" alt="star"></li>
+                                </ul>
+                            </div>
+                            <div class="share">
+                                <ul>
+                                    <li class="share_text">
+                                        <p>Share</p>
+                                    </li>
+                                    <li><img src="img/icon/twitter.png" alt="twitter"></li>
+                                    <li><img src="img/icon/facebook.png" alt="facebook"></li>
+                                    <li><img src="img/icon/pinterest.png" alt="pinterest"></li>
+                                    <li><img src="img/icon/telegram.png" alt="telegram"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" id="11">
+                        <div class="card_top">
+                            <img class="img_card" src="img/11_card.png" alt="image">
+                            <img class="plus" src="img/icon/plus.png" alt="">
+                            <p class="date">10/08/2010</p>
+                        </div>
+                        <div class="card_button">
+                            <div class="favorites">
+                                <ul>
+                                    <li>
+                                        <p>Lorem Ipsum is simply</p>
+                                    </li>
+                                    <li><img src="img/icon/star.png" alt="star"></li>
+                                </ul>
+                            </div>
+                            <div class="share">
+                                <ul>
+                                    <li class="share_text">
+                                        <p>Share</p>
+                                    </li>
+                                    <li><img src="img/icon/twitter.png" alt="twitter"></li>
+                                    <li><img src="img/icon/facebook.png" alt="facebook"></li>
+                                    <li><img src="img/icon/pinterest.png" alt="pinterest"></li>
+                                    <li><img src="img/icon/telegram.png" alt="telegram"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" id="12">
+                        <div class="card_top">
+                            <img class="img_card" src="img/12_card.png" alt="image">
+                            <img class="plus" src="img/icon/plus.png" alt="">
+                            <p class="date">10/08/2010</p>
+                        </div>
+                        <div class="card_button">
+                            <div class="favorites">
+                                <ul>
+                                    <li>
+                                        <p>Lorem Ipsum is simply</p>
+                                    </li>
+                                    <li><img src="img/icon/star.png" alt="star"></li>
+                                </ul>
+                            </div>
+                            <div class="share">
+                                <ul>
+                                    <li class="share_text">
+                                        <p>Share</p>
+                                    </li>
+                                    <li><img src="img/icon/twitter.png" alt="twitter"></li>
+                                    <li><img src="img/icon/facebook.png" alt="facebook"></li>
+                                    <li><img src="img/icon/pinterest.png" alt="pinterest"></li>
+                                    <li><img src="img/icon/telegram.png" alt="telegram"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
-    </body>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <p>© 2013 Photocage app powered by cssauthor.com</p>
+        </div>
+    </div>
+</body>
+
 </html>

@@ -53,7 +53,7 @@ button {
 
 .cards {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 20px;
 }
 
@@ -67,11 +67,11 @@ button {
     position: relative;
 }
 
-.img_card {
+.card_top .img_card {
     z-index: 1;
 }
 
-.card_top .plus {
+.card_top .fa-plus-circle {
     display: none;
     position: absolute;
     z-index: 2;
@@ -79,16 +79,45 @@ button {
     top: 90px;
 }
 
-.card_top:hover .plus {
+.card_top:hover .fa-plus-circle {
     display: block;
 }
 
-.date {
+.card_top .date {
     color: white;
     position: absolute;
     z-index: 2;
     bottom: 10px;
     left: 5px;
+}
+
+.card_button ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+.card_button .favorites {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card_button .favorites ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.share {
+    display: block;
+    float: right;
+}
+
+.share .share_text {
+    margin-right: 7px;
+}
+
+.share ul li {
+    margin-left: 2px;
 }
 
 
