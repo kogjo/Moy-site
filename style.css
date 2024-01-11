@@ -6,10 +6,15 @@
     margin: 0;
     background-color: #a9a9a9;
 }
+
 .content {
     display: flex;
     justify-content: center;
     margin: 0 10%;
+}
+
+.fa-star:hover {
+    color: #ffae00;
 }
 
 .logo {
@@ -77,10 +82,12 @@ button {
     z-index: 2;
     left: 100px;
     top: 90px;
+    color: #06b12e;
 }
 
 .card_top:hover .fa-plus-circle {
     display: block;
+    font-size: 30px;
 }
 
 .card_top .date {
@@ -120,6 +127,21 @@ button {
     margin-left: 2px;
 }
 
+.fa-twitter {
+    color: #00acee
+}
+
+.fa-facebook-official {
+    color: #4267B2;
+}
+
+.fa-pinterest {
+    color: #E60023;
+}
+
+.fa-telegram {
+    color: #0088cc;
+}
 
 .footer p {
     display: flex;
